@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>  
+  <meta charset="UTF-8">
+  <meta 
+  name="viewport" content="width=device-width, initial-scale=1.0"
+  http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - RedStore</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="container">
+
+    <div class="navbar">
+      <div class="logo">
+        <img src="./assets/logo.png" width="125px" alt="">
+      </div>
+      <nav>
+        <ul id="MenuItems">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./products.html">Products</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="./login.html">Account</a></li>
+        </ul>
+      </nav>
+      <a href="./cart.html"><img src="./assets/cart.png" width="30px" height="30px"></a>
+      <img src="./assets/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+  </div>
+       <!-- CART ITEMS DETAILS -->
+       <div class="small-container cart-p">
+
+        <table>
+         
+          <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+          </tr>
+          
+          <tr>
+            <td>
+              <div class="cart-info">
+                <img src="./assets/buy-1.jpg">
+                <div>
+                  <p>Red Printed T-Shirt</p>
+                  <small>Price: $50.00</small>
+                  <br>
+                  <a href="">Remove</a>
+                </div>
+              </div>
+            </td>
+            <td> <input type="number" value="1"> </td>
+            <td>$50.00</td>
+          </tr>
+
+          <tr>
+            <td>
+              <div class="cart-info">
+                <img src="./assets/buy-2.jpg">
+                <div>
+                  <p>Red Printed T-Shirt</p>
+                  <small>Price: $65.00</small>
+                  <br>
+                  <a href="">Remove</a>
+                </div>
+              </div>
+            </td>
+            <td> <input type="number" value="1"> </td>
+            <td>$65.00</td>
+          </tr>
+
+          <tr>
+            <td>
+              <div class="cart-info">
+                <img src="./assets/buy-3.jpg">
+                <div>
+                  <p>Red Printed T-Shirt</p>
+                  <small>Price: $55.00</small>
+                  <br>
+                  <a href="">Remove</a>
+                </div>
+              </div>
+            </td>
+            <td> <input type="number" value="1"> </td>
+            <td>$55.00</td>
+          </tr>
+
+        </table>
+
+        <div class="total-price">
+          <table>
+            
+            <tr>
+              <td>Subtotal</td>
+              <td>$170.00</td>
+            </tr>
+
+            <tr>
+              <td>Tax</td>
+              <td>$30.00</td>
+            </tr>
+
+            <tr>
+              <td>Subtotal</td>
+              <td>$200.00</td>
+            </tr>
+
+          </table>
+        </div>
+
+       </div>
+
+    
+      <!--FOOTER-->
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col-1">
+              <h3>Download Our App</h3>
+              <p>Download App for Android and ios mobile phone.</p>
+              <div class="app-logo">
+                <img src="./assets/play-store.png">
+                <img src="./assets/app-store.png">
+              </div>
+            </div>
+
+            <div class="footer-col-2">
+              <img src="./assets/logo-white.png" alt="">
+              <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Suports Acessible to the Many.</p>
+            </div>
+
+            <div class="footer-col-3">
+              <h3>Useful Links</h3>
+              <ul>
+                <li>Cupons</li>
+                <li>Blog Post</li>
+                <li>Return Policy</li>
+                <li>Join Affiliate</li>
+              </ul>
+            </div>
+
+            <div class="footer-col-4">
+              <h3>Follow Us</h3>
+              <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>YouTube</li>
+              </ul>
+            </div>
+
+          </div>
+          <hr>
+          <p class="copy">Copyrught 2020 - Easy Tutorials</p>
+        </div>
+      </div>
+<!--JSFOR TOGGLE MENU-->
+     <script>
+       var MenuItems = document.getElementById("MenuItems");
+
+       MenuItems.style.maxHeight = "0px";
+
+       function menutoggle(){
+         if (MenuItems.style.maxHeight == "0px")
+         {
+           MenuItems.style.maxHeight = "200px"
+         }
+
+         else 
+         {
+          MenuItems.style.maxHeight = "0px"
+         }
+         }
+     </script>
+    </body>
+</html>
